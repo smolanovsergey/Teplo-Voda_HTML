@@ -1,0 +1,73 @@
+@media screen and (max-width: 3000px) and (min-width: 1341px) {
+    body {
+
+    }
+    .bg_media {
+        display: none;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 1340px) and (min-width: 1160px) {
+    body {
+        overflow: visible;
+    }
+    .map div{
+        font-size: 16px;
+        line-height: 16px;
+        width: auto%;
+        height: 30px;
+    }
+    .heat_system {
+        bottom: 20%;
+    }
+    .santehnika, .radiators{
+        bottom: 60%;
+    }
+    .bad_water, .electrik {
+        bottom: 48%;
+    }
+    .bad_water, .electrik {
+        bottom: 48%;
+    }
+    .deep_water, .heat_nasos {
+        bottom: 37%;
+    }
+    .clear_water, .heat_system {
+        bottom: 24%;
+    }
+}
+@media screen and (max-width: 1159px) and (min-width: 570px) {
+    body {
+        overflow: visible;
+    }
+    .body_contect {
+        display: none;
+    }
+    header {
+        position: relative;
+        display: inline-block;
+    }
+    .slogan {
+        position: relative
+    }
+    .footer {
+        position: relative;
+    }
+    .phone {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .phone span {
+        margin: 10px;
+    }
+    .bg_media {
+        display: block;
+        margin: auto;
+    }
+    .bg_media img{
+        width: 100%;
+        height: auto;
+    }
+}

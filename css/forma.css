@@ -1,0 +1,115 @@
+.forma {
+	width: 387px;
+	height: 315px;
+	display: inline-block;
+	position: fixed;
+	top: 30%;
+	cursor: pointer;
+}
+.forma_hide {
+	right: -387px;
+}
+.hide_close {
+	visibility: hidden;
+}
+.show_close {
+	visibility: show;
+}
+.forma_visible {
+	right: 0px;
+	z-index: 50;
+}
+.forma_name {
+	width: 0px;
+	height: 315px;
+	text-align: center;
+	line-height: 60px;
+	z-index: 50;
+}
+.forma_name p{
+    color: white;
+    font-family: Geometria-Medium;
+    font-size: 18px;
+    text-transform: uppercase;
+	width: 315px;
+	height: 60px;
+	background-color: red;
+    transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	/* Координаты точки трансформации */ 
+	-ms-transform-origin: left top 0;
+	-moz-transform-origin: left top 0;
+	-webkit-transform-origin: left top 0;
+	transform-origin: left top 0;
+	border-radius: 0px 0px 20px 20px;
+	box-shadow: 10px 0px 28px rgba(0,0,0,0.25), 10px 0px 10px rgba(0,0,0,0.22);
+}
+.forma_content {
+	background-color: #C8C8C5;
+	height: 315px;
+	margin-top: -331px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	text-align: center;
+}
+.forma_content p>input{
+	width: 90%;
+    text-align: left;
+    border-radius: 5px;
+	height: 25px;
+}
+.forma_content .comment {
+	height: 75px;
+}
+.name {
+	margin-top: 20px;
+}
+.forma_content input{
+	font-family: Geometria-ExtraLight;
+	font-size: 20px;
+}
+input.forma_button {
+	margin-top: 20px;
+	width: 184px;
+	height: 35px;
+	background-color: red;
+	border-radius: 5px;
+	color: white;
+	font-family: Geometria-ExtraLight;
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+input.forma_button:hover {
+	background-color: white;
+	color: red;
+	transition: 0.5s;
+}
+.close {
+position: absolute;
+left: -47px;
+top: 32px;
+width: 32px;
+height: 32px;
+opacity: 0.8;
+cursor: pointer;
+z-index: 10;
+}
+.close:hover {
+opacity: 1;
+}
+.close:before, .close:after {
+position: absolute;
+left: 15px;
+content: ' ';
+height: 33px;
+width: 2px;
+background-color: white;
+}
+.close:before {
+transform: rotate(45deg);
+}
+.close:after {
+transform: rotate(-45deg);
+}

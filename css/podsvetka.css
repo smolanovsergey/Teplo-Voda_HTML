@@ -1,0 +1,18 @@
+span.bg {
+    height:100vh;
+    width: auto;
+    margin: auto;
+    position: relative;
+    z-index: -1;
+}
+span.bg>img.bg {
+    height: 100vh;
+    z-index: -10;
+}
+span.bg>.dop_image{
+    position: absolute;
+    z-index: 2;
+    margin-left: -100%;
+    opacity: 0.5;
+    display: none;
+}

@@ -1,0 +1,184 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.body_contect {
+	position: relative;
+}
+header {
+	top: 0px;
+	left: 0 px;
+	position: absolute;
+	width: 100vw;
+	text-align: center;	
+	display: flex;
+    align-items: center;
+    justify-content: center;
+  	align-content: space-between;
+}
+.logo img{
+	width: 200px;
+	height: auto;
+}
+.content_main_graph {
+
+	height: auto;
+	position: static;
+	text-align: center;
+}
+.svg_viewe {
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;	
+}
+.map div{
+	position: absolute;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: .2s linear;
+	background-color: #76D1F5;
+	border-radius: 5px;
+	font-family: Geometria;
+    font-size: 18px;
+    vertical-align: center;
+    cursor: pointer;
+	z-index: 5;
+}
+.map div:hover {
+	background-color: red;
+	color: white;
+}
+.map>div>p {
+	line-height: 0px;
+	cursor: pointer;
+}
+.bg_media {
+	display: none;
+}
+.tepla_pidloga {
+	bottom: 17%;
+	left: 45%;	
+	width: 137px;
+	height: 40px;	
+}
+.clear_water {
+	bottom: 16%;
+	left: 33%;	
+	width: 137px;
+	height: 40px;	
+}
+.deep_water {
+	bottom: 25%;
+	left: 22%;	
+	width: 137px;
+	height: 40px;	
+}
+.bad_water {
+	bottom: 40%;
+	left: 18%;	
+	width: 137px;
+	height: 40px;	
+}
+.santehnika {
+	bottom: 55%;
+	left: 18%;	
+	width: 137px;
+	height: 40px;	
+}
+.sun_system {
+	top: 25%;
+	left: 25%;	
+	width: 160px;
+	height: 40px;	
+}
+.heat_system {
+	bottom: 16%;
+	right: 28%;	
+	width: 210px;
+	height: 40px;	
+}
+.heat_nasos {
+	bottom: 25%;
+	right: 18%;	
+	width: 170px;
+	height: 40px;	
+}
+.electrik {
+	bottom: 40%;
+	right: 15%;	
+	width: 150px;
+	height: 40px;	
+}
+.radiators {
+	bottom: 55%;
+	right: 18%;	
+	width: 150px;
+	height: 40px;	
+}
+.smart_house {
+	top: 25%;
+	right: 23%;	
+	width: 190px;
+	height: 40px;	
+}
+.nav ul {
+	margin: 0;
+	padding: 20px;
+}
+.nav ul li{
+	display: inline;
+	margin: 0 20px 0 20px;
+    font-family: Geometria-Medium;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav ul li:hover {
+	color: red;
+	border-bottom: solid 2px red;
+}
+.nav_hr{
+	padding: 0;
+	margin: auto;
+	color: red;
+	width: 90%;
+	height: 1px;
+	background-color: red;
+	text-align: center;
+}
+.phone {
+	display: inline-grid;
+	font-family: Geometria-Medium;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+}
+.phone img {
+	height: 24px;
+	width: auto;
+	vertical-align: middle;
+}
+.footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 39px;
+	text-align: center;
+	background-color: #C4C4C4;
+}
+.slogan {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	font-family: Geometria-ExtraLight;
+    font-size: 40px;
+    text-align: center;
+    color: re0-2
+}
+
+.footer span{
+	line-height: 38px;
+}

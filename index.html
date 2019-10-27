@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<title>Тепло-Вода</title>
+	<link rel="stylesheet" href="css\reset.css">
+	<link rel="stylesheet" href="css\style.css">
+	<link rel="stylesheet" href="css\fonts.css">
+	<link rel="stylesheet" href="css\forma.css">
+	<link rel="stylesheet" href="css\podsvetka.css">
+	<link rel="stylesheet" href="css\media.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var width = $("img.bg").width();
+			var height = $("img.bg").height();
+			$('.dop_image').attr('height', height );
+			$('.dop_image').attr('width', width );
+			$('span.bg').attr('height', height );
+			$('span.bg').attr('width', width );
+		});
+	</script>
+	<section class="body_contect">
+		<section class="content_main_graph">
+			<span class="bg">
+					<img class="bg" src="img/bg.jpg">
+					<img class="dop_image" id="tepla_pidloga" src="img/tepla_pidloga.png">
+					<img class="dop_image" id="clear_water" src="img/clear_water.png">
+					<img class="dop_image" id="deep_water" src="img/deep_water.png">
+					<img class="dop_image" id="bad_water" src="img/bad_water.png">
+					<img class="dop_image" id="santehnika" src="img/santehnika.png">
+					<img class="dop_image" id="sun_system" src="img/sun_system.png">
+					<img class="dop_image" id="heat_system" src="img/heat_system.png">
+					<img class="dop_image" id="heat_nasos" src="img/heat_nasos.png">
+					<img class="dop_image" id="electrik" src="img/electrik.png">
+					<img class="dop_image" id="radiators" src="img/radiators.png">
+				</span>
+
+			<div class="map">
+				<div class="tepla_pidloga">
+					<p>Тепла підлога</p>
+				</div>
+				<div class="clear_water">
+					<p>Очистка води</p>
+				</div>
+				<div class="deep_water">
+					<p>Скважини</p>
+				</div>	
+				<div class="bad_water">
+					<p>Каналізація</p>
+				</div>		
+				<div class="santehnika">
+					<p>Сантехніка</p>
+				</div>	
+				<div class="sun_system">
+					<p>Сонячні системи</p>
+				</div>		
+				<div class="heat_system">
+					<p>Котельне обладнання</p>
+				</div>	
+				<div class="heat_nasos">
+					<p>Теплові насоси</p>
+				</div>	
+				<div class="electrik">
+					<p>Електрика</p>
+				</div>		
+				<div class="radiators">
+					<p>Радіатори</p>
+				</div>	
+				<div class="smart_house">
+					<p>Розумний будинок</p>
+				</div>
+
+			</div>
+		</section>
+	</section>
+	<header>
+		<section class="logo">
+			<img src="img/LOGO.svg">
+		</section>
+		<nav>
+			<div class="nav">
+				<hr class="nav_hr">
+				<ul>
+					<li>Монтаж</li>
+					<li>Матеріали</li>
+					<li>Фото</li>
+					<li>Прайс</li>
+					<li>Статті</li>
+					<li>Контакти</li>
+				</ul>
+				<hr class="nav_hr">
+			</div>
+		</nav>
+		<section class="bg_media">
+			<div>
+				<img src="img/bg.jpg">
+			</div>
+		</section>
+		<section class="phone">
+			<span>+38(097)  881-81-44 <img src="img/kyivstar.svg"></span>
+			<span>+38(066) 359-87-05 <img src="img/MTS.svg"></span>
+			<span>+38(093)  052-01-14 <img src="img/life.svg"><img src="img/viber.svg"></span>
+		</section>
+	</header>
+	<section class="slogan">
+		<p>Сучасні інженерні системи Вашої оселі</p>
+	</section>
+	<footer>
+		<section class="footer">
+			<div>
+				<span>2019 Все права защищены.</span>
+			</div>
+		</section>
+	</footer>
+	<section id="forma"class="forma forma_hide">
+		<div>
+			<div class="forma_name">
+				<span id="close_button" class="close hide_close"></span>
+				<p>замовити  роботи</p>
+				
+			</div>
+			<div class="forma_content">
+				<form action="back_form.php">
+				  <p><input type="text" class="name" name="name" placeholder="Введіть ім'я" required><Br>
+				  <p><input type="phone" name="phone" placeholder="Введіть телефон" required><Br>
+				  <p><input type="email" name="email" placeholder="e-mail" required><Br>
+				  <p><input type="comment" class="comment" name="comment" placeholder="Залиште повідомлення" required><Br>
+  				  <span><input class="forma_button" type="button" value="ВІДПРАВИТИ"></span>
+ 			</form>
+			</div>
+		</div>
+	</section>	
+	<script type="text/javascript">
+		$('#close_button').on('click',function(){
+        $('#forma').removeClass('forma_visible');
+        $('#forma').addClass('forma_hide');
+        $('.forma_name span.close').removeClass('show_close');
+        $('.forma_name span.close').addClass('hide_close');
+    });
+	</script>
+	<script type="text/javascript">
+		$('.forma p').on('click',function(){
+        $('.forma').removeClass('forma_hide');
+        $('.forma').addClass('forma_visible');
+        $('.forma_name span.close').removeClass('hide_close');
+        $('.forma_name span.close').addClass('show_close');
+    });
+	</script>
+	<script type="text/javascript">
+		$('.map>.tepla_pidloga').mouseover(function() {
+			$('span.bg>#tepla_pidloga').show();
+		});
+		$('.map>.clear_water').mouseover(function() {
+			$('span.bg>#clear_water').show();
+		});
+		$('.map>.deep_water').mouseover(function() {
+			$('span.bg>#deep_water').show();
+		});
+		$('.map>.bad_water').mouseover(function() {
+			$('span.bg>#bad_water').show();
+		});
+		$('.map>.santehnika').mouseover(function() {
+			$('span.bg>#santehnika').show();
+		});
+		$('.map>.sun_system').mouseover(function() {
+			$('span.bg>#sun_system').show();
+		});
+		$('.map>.heat_nasos').mouseover(function() {
+			$('span.bg>#heat_nasos').show();
+		});
+		$('.map>.heat_system').mouseover(function() {
+			$('span.bg>#heat_system').show();
+		});
+		$('.map>.electrik').mouseover(function() {
+			$('span.bg>#electrik').show();
+		});
+		$('.map>.radiators').mouseover(function() {
+			$('span.bg>#radiators').show();
+		});
+		$(".map>div p" ).mouseleave(function() {
+			$('span.bg>.dop_image').fadeOut(100);
+		});
+		$('.map>div p').mouseleave(function(){
+			$('span.bg>.dop_image').fadeOut(100);
+			//alert('Курсор мыши вышел из границ элемента "click-catalog"');
+		});
+	</script>
+</body>
+</html>
